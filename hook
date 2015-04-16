@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# fix for nvm in sourcetree
+source ~/.nvm/nvm.sh 
+
 NODE=`which node 2> /dev/null`
 NODEJS=`which nodejs 2> /dev/null`
 IOJS=`which iojs 2> /dev/null`
