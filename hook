@@ -16,4 +16,6 @@ elif [[ -n $IOJS ]]; then
   $IOJS $($IOJS -e "console.log(require.resolve('pre-commit'))")
 elif [[ -x $LOCAL ]]; then
   $LOCAL $($LOCAL -e "console.log(require.resolve('pre-commit'))")
+else
+  echo "pre-commit can not find the path to node" && exit 1
 fi
