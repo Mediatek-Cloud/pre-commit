@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# fix for nvm in sourcetree
-source ~/.nvm/nvm.sh 
+# check nvm exists?
+[ -s "${HOME}/.nvm/nvm.sh" ] && . "${HOME}/.nvm/nvm.sh"
 
 NODE=`which node 2> /dev/null`
 NODEJS=`which nodejs 2> /dev/null`
